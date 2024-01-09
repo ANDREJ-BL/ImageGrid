@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-align: start;
+        }
+
+        .gallery-heading {
+            margin-bottom: 20px;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 10px;
+        }
+
+        .image-card {
+            width: calc(20% - 10px);
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: blue;
+        }
+
+        .image-card .image-title {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            border: 1px solid black;
+        }
+
+        .gallery-description {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .image-card {
+                width: calc(33.333% - 10px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .image-card {
+                width: calc(100% - 10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <h2 class="gallery-heading">Gallery Heading</h2>
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+            <div class="image-card">
+                <img src="placeholder-image.png" alt="Image description">
+                <span class="image-title">Image Title</span>
+            </div>
+        </div>
+        <p class="gallery-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+
+</body>
+
+</html>
